@@ -67,16 +67,7 @@ footer {
   display: flex;
   gap: 10px;
   .social-list__link--dark-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-
-    transition: var(--transition-transform);
 
     &:hover,
     &:focus {
