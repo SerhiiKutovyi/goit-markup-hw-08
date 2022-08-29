@@ -1,0 +1,48 @@
+.regular {
+  height: 372px;
+}
+
+.regular-list {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.regular-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regular-link {
+  border: 1px solid;
+  width: 170px;
+  height: 92px;
+  padding: 12px 32px;
+
+  border-color: rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition: var(--transition-transform), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-link:hover,
+.regular-link:focus {
+  border-color: var(--accent-color);
+}
+
+.regular-icon {
+  fill: rgba(175, 177, 184, 1);
+
+  transition: var(--transition-transform);
+}
+
+.regular-icon:hover,
+.regular-icon:focus {
+  fill: var(--accent-color);
+}
+
+.regular-link:hover .regular-icon,
+.regular-link:focus .regular-icon {
+  fill: var(--accent-color);
+}

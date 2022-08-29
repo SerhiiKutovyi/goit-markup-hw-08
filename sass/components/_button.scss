@@ -1,0 +1,23 @@
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  padding: 10px 32px;
+  min-width: 210px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  transition: var(--transition-transform);
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: rgb(245, 244, 250);
+  border: none;
+  transition: var(--transition-transform);
+}

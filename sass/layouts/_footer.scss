@@ -1,0 +1,95 @@
+footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.foot {
+  display: flex;
+  align-items: baseline;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.call {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.logo-sec,
+.address-maps {
+  color: var(--primary-bg-color);
+
+  text-decoration: none;
+
+  transition: var(--transition-transform);
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+
+  &-maps:hover,
+  &-maps:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address-nav {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  transition: var(--transition-transform);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/*______________ Приєднуйтесь */
+
+.footer-title {
+  margin-bottom: 20px;
+
+  color: var(--primary-bg-color);
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-list--dark {
+  display: flex;
+  gap: 10px;
+  .social-list__link--dark-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: var(--transition-transform);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .social-list__icon--dark-icon {
+    fill: var(--primary-bg-color);
+
+    .social-list__link--dark-link:hover &,
+    .social-list__link--dark-link:focus & {
+      fill: var(--primary-bg-color);
+    }
+  }
+}

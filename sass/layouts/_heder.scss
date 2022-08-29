@@ -1,0 +1,133 @@
+header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.search {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  margin-left: 90px;
+}
+
+.site-nav .item + .item {
+  margin-left: 47px;
+}
+
+.main-nav .link {
+  padding: 32px 3px;
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  position: relative;
+  transition: var(--transition-transform);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  transition: var(--transition-transform);
+}
+
+.current {
+  color: var(--accent-color);
+
+  display: flex;
+  transition: var(--transition-transform);
+}
+
+.current::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  position: absolute;
+
+  bottom: -1px;
+  left: 0px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+
+  transition: var(--transition-transform);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  transition: var(--transition-transform);
+}
+
+/* ___________________Contacts___________________*/
+
+.search .contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.smartphone-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.contacts-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.envelope-icon {
+  margin-right: 10px;
+  fill: rgba(117, 117, 117, 1);
+  transition: var(--transition-transform);
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+
+  color: rgba(117, 117, 117, 1);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: var(--transition-transform);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.envelope-icon .contacts-envelope:hover .envelope-icon,
+.contacts-envelope:focus .envelope-icon {
+  fill: var(--accent-color);
+}
+
+.smartphone-icon {
+  margin-right: 10px;
+  fill: rgba(117, 117, 117, 1);
+
+  transition: var(--transition-transform);
+}
+
+.contacts-link:hover .smartphone-icon,
+.contacts-link:focus .smartphone-icon,
+.contacts-link:hover .envelope-icon,
+.contacts-link:focus .envelope-icon {
+  fill: var(--accent-color);
+}
