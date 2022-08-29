@@ -75,6 +75,21 @@ ul.ol {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
+}
 
 .logo {
   display: inline-block;
@@ -492,9 +507,12 @@ header {
 }
 
 .hero-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
   background-color: rgb(196, 196, 196);
   width: 480px;
-  height: 410px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -502,30 +520,34 @@ header {
   background-position: center;
   background-size: cover;
 }
-
-.hero-section .section {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .hero-section {
+    width: 768px;
+  }
 }
-
-.hero-section .container {
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 1600px) {
+  .hero-section {
+    width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero-title {
   margin-bottom: 30px;
-  display: block;
-  color: rgb(255, 255, 255);
-  text-align: center;
   font-weight: 900;
-  max-width: 696px;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 1.6153846154;
+  text-align: center;
   text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .feature__list {
