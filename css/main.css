@@ -415,6 +415,94 @@ ul.ol {
   fill: var(--primary-bg-color);
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 15px 48px 40px;
+  width: 100vw;
+  height: 796px;
+  background-color: rgb(255, 255, 255);
+}
+
+.mobile-menu__close {
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  display: block;
+  fill: rgb(33, 33, 33);
+}
+
+.mobile-menu__close:focus {
+  fill: rgb(33, 150, 243);
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-menu__link:focus {
+  color: rgb(33, 150, 243);
+}
+
+.mobile-menu__item:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.mobile-menu__tel {
+  padding-top: 302px;
+  padding-bottom: 32px;
+}
+
+.mobile-menu__tel-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: rgb(117, 117, 117);
+}
+
+.mobile-menu__tel-link:focus {
+  color: rgb(33, 150, 243);
+}
+
+.mobile-menu__mail {
+  padding-bottom: 64px;
+}
+
+.mobile-menu__mail-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-menu__mail-link:focus {
+  color: rgb(33, 150, 243);
+}
+
+.mobile-menu__social-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: rgb(33, 150, 243);
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__social-list {
+  display: flex;
+  gap: 20px;
+}
+
 header {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
@@ -423,11 +511,21 @@ header {
   align-items: center;
   background-color: rgb(255, 255, 255);
   display: flex;
+  padding: 10px 15px;
+}
+
+.menu-open {
+  margin-left: auto;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  fill: rgb(33, 33, 33);
+  border: none;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .site-nav {
@@ -487,6 +585,7 @@ header {
   display: flex;
   margin-left: auto;
   gap: 30px;
+  display: none;
 }
 
 .smartphone-item {

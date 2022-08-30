@@ -5,10 +5,21 @@ header {
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
   display: flex;
+  padding: 10px 15px;
 }
+
+.menu-open {
+  margin-left: auto;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 1);
+  fill: rgba(33, 33, 33, 1);
+  border: none;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .site-nav {
@@ -74,6 +85,7 @@ header {
   display: flex;
   margin-left: auto;
   gap: 30px;
+  display: none;
 }
 
 .smartphone-item {
