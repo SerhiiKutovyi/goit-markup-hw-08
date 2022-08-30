@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка -->
@@ -335,8 +334,8 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-list__link--dark-link">
-              <a href="" class="social-list__link"
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link--dark-link"
                 ><svg class="social-list__icon social-list__icon--dark-icon" width="20" Height="20">
                   <use href="./images/symbol.svg#icon-linkedin"></use>
                 </svg>
@@ -344,26 +343,25 @@
             </li>
           </ul>
         </div>
-
-        <!-- ____________________Підпишіться на розсилку_________________________ -->
-
-        <form class="footer-input">
-          <label for="subscribe-email" class="label-subscribe">Підпишіться на розсилку</label>
-          <input
-            class="subscribe-input"
-            type="email"
-            name="subscribe-email"
-            placeholder="E-mail"
-            id="subscribe-email"
-            required
-          />
-        </form>
-        <button type="submit" class="footer-button">
-          <span>Підписатися</span>
-          <svg class="icon-send" width="24" Height="24">
-            <use href="./images/symbol.svg#icon-send"></use>
-          </svg>
-        </button>
+        <div>
+          <form class="footer-input">
+            <label for="subscribe-email" class="label-subscribe">Підпишіться на розсилку</label>
+            <input
+              class="subscribe-input"
+              type="email"
+              name="subscribe-email"
+              placeholder="E-mail"
+              id="subscribe-email"
+              required
+            />
+          </form>
+          <button type="submit" class="footer-button">
+            <span>Підписатися</span>
+            <svg class="icon-send" width="24" Height="24">
+              <use href="./images/symbol.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
   </body>

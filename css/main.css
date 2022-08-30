@@ -107,11 +107,15 @@ ul.ol {
 
 .section-title {
   margin-bottom: 50px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
+  height: 33px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 .backdrop {
@@ -580,7 +584,6 @@ header {
 .feature__list {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -598,13 +601,13 @@ header {
   margin-left: 30px;
 }
 .feature__title {
-  margin-top: 0;
   margin-bottom: 10px;
-  color: var(--title-text-color);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--title-text-color);
 }
 .feature__icon {
   display: flex;
@@ -821,6 +824,7 @@ footer {
 
 .address {
   margin-top: 20px;
+  margin-bottom: 60px;
   font-style: normal;
 }
 .address-maps:hover, .address-maps:focus {
@@ -869,7 +873,7 @@ footer {
 
 .footer-button {
   position: relative;
-  margin-top: 48px;
+  margin-top: 20px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: 0;
@@ -912,6 +916,7 @@ footer {
 .label-subscribe {
   display: block;
   margin-bottom: 20px;
+  margin-top: 60px;
   height: 16px;
   font-weight: 700;
   font-size: 14px;
