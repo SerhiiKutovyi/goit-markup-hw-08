@@ -1,6 +1,16 @@
 .feature {
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+    @include tablet {
+      text-align: start;
+    }
+    @include desktop {
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
   &__list .item + .item {
     margin-left: 30px;
@@ -23,8 +33,35 @@
     margin-bottom: 30px;
 
     background-color: rgba(245, 244, 250, 1);
-    width: 270px;
+    width: 450px;
     height: 120px;
+
     border-radius: 4px;
+
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 270px;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+    }
+  }
+
+  @include tablet {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
