@@ -2,15 +2,18 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixins';
+
 // base=====================================
 @import './base/base';
 @import './base/container';
+
 // components===============================
 @import './components/logo';
 @import './components/section-title';
 @import './components/modal';
 @import './components/button';
 @import './components/btn';
+@import './components/social';
 // Heder======================================
 @import './layouts/heder';
 // MAIN==========================================

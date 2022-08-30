@@ -1,143 +1,73 @@
-// .team {
-//   background-color: rgba(245, 244, 250, 1);
-
-//   &__border {
-//     padding: 30px 10px;
-//     display: flex;
-//     text-align: center;
-//     flex-direction: column;
-//     justify-content: center;
-//   }
-//   &__author {
-//     margin-bottom: 10px;
-//     color: var(--title-text-color);
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.18;
-//   }
-//   &__section {
-//     display: flex;
-//     width: 270px;
-//     height: 428px;
-//     font-size: 16px;
-//     line-height: 1.18;
-//   }
-//   &__section .item {
-//     background-color: var(--primary-bg-color);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//       0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//   }
-//   &__section .item + .item {
-//     margin-left: 30px;
-//   }
-//   &__border > p {
-//     margin-bottom: 16px;
-//   }
-//   &__soc-list {
-//     display: flex;
-//     justify-content: center;
-//     gap: 10px;
-//   }
-
-//   &__soc-link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     transition: var(--transition-transform);
-
-//     &:hover,
-//     &:focus {
-//       background-color: var(--accent-color);
-//     }
-//   }
-
-//   &__icon {
-//     fill: rgba(175, 177, 184, 1);
-//     transition: var(--transition-transform);
-
-//     &:hover,
-//     &:focus {
-//       fill: var(--primary-bg-color);
-//     }
-
-//     .team__soc-link:hover &,
-//     .team__soc-link:focus & {
-//       fill: var(--primary-bg-color);
-//     }
-//   }
-// }
-
-.social-list {
-}
-
 .team {
-  background-color: rgb(245, 244, 250);
-}
-.team__border {
-  padding: 30px 10px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.team__employe {
-  margin-bottom: 10px;
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-}
-.team__section {
-  display: flex;
-  width: 270px;
-  height: 428px;
-  font-size: 16px;
-  line-height: 1.18;
-}
-.team__section .item {
-  background-color: var(--primary-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.team__section .item + .item {
-  margin-left: 30px;
-}
-.team__border > p {
-  margin-bottom: 16px;
-}
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.social-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: var(--transition-transform);
-}
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--accent-color);
-}
-.social-list__icon {
-  fill: rgb(175, 177, 184);
-  transition: var(--transition-transform);
-}
-.social-list__icon:hover,
-.social-list__icon:focus {
-  fill: var(--primary-bg-color);
-}
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: var(--primary-bg-color);
+  background-color: rgba(245, 244, 250, 1);
+
+  &__border {
+    padding: 30px 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__author {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  &__section {
+    display: flex;
+    width: 270px;
+    height: 428px;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  &__section .item {
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__section .item + .item {
+    margin-left: 30px;
+  }
+  &__border > p {
+    margin-bottom: 16px;
+  }
+  &__soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: var(--transition-transform);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: rgba(175, 177, 184, 1);
+    transition: var(--transition-transform);
+
+    &:hover,
+    &:focus {
+      fill: var(--primary-bg-color);
+    }
+
+    .team__soc-link:hover &,
+    .team__soc-link:focus & {
+      fill: var(--primary-bg-color);
+    }
+  }
 }
