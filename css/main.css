@@ -705,6 +705,7 @@ header {
   justify-content: center;
   font-size: 16px;
   line-height: 1.18;
+  gap: 30px;
 }
 .team__section .item {
   background-color: var(--primary-bg-color);
@@ -743,11 +744,12 @@ header {
 }
 
 .regular {
-  height: 372px;
+  height: 100%;
 }
 
 .regular-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
@@ -794,7 +796,10 @@ footer {
 
 .foot {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -805,7 +810,6 @@ footer {
 
 .call {
   margin-top: 12px;
-  margin-left: 70px;
 }
 
 .logo-sec,
@@ -863,10 +867,6 @@ footer {
   padding-bottom: 34px;
 }
 
-.footer-input {
-  margin-left: 93px;
-}
-
 .footer-button {
   position: relative;
   margin-top: 48px;
@@ -912,7 +912,6 @@ footer {
 .label-subscribe {
   display: block;
   margin-bottom: 20px;
-  width: 207px;
   height: 16px;
   font-weight: 700;
   font-size: 14px;

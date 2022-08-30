@@ -4,7 +4,10 @@ footer {
 
 .foot {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
 
   padding-top: 60px;
   padding-bottom: 60px;
@@ -16,7 +19,6 @@ footer {
 
 .call {
   margin-top: 12px;
-  margin-left: 70px;
 }
 
 .logo-sec,
