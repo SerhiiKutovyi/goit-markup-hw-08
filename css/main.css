@@ -144,6 +144,7 @@ ul.ol {
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   padding: 40px;
+  max-width: 100%;
   width: 450px;
   min-height: 609px;
   max-height: 100%;
@@ -170,6 +171,16 @@ ul.ol {
 .modal-close:hover .modal-icon-close, .modal-close:focus .modal-icon-close {
   fill: var(--accent-color);
   transition: var(--transition-transform);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal-icon-close {
   fill: rgb(0, 0, 0);
@@ -288,31 +299,39 @@ ul.ol {
 }
 .modal-field-privacy {
   margin-bottom: 30px;
-  text-align: center;
+  text-align: start;
 }
 .modal-contract {
   color: var(--accent-color);
-}
-.modal-text {
-  height: 24px;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
+  text-decoration-line: underline;
+}
+.modal-contract-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
   color: #757575;
   cursor: pointer;
 }
-.modal-text::before {
+.modal-contract-text::before {
+  content: "";
+  margin-right: 8px;
   bottom: -2px;
   position: relative;
   display: inline-block;
-  content: "";
   width: 16px;
   height: 15px;
-  margin-right: 7px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
 }
-.modal-check:checked + .modal-text::before {
+.modal-check:checked + .modal-contract-text::before {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--accent-color);
@@ -433,10 +452,11 @@ ul.ol {
   border: none;
   margin-left: auto;
   display: block;
-  fill: rgb(33, 33, 33);
+  background-color: rgb(255, 255, 255);
+  color: #212121;
 }
 
-.mobile-menu__close:focus {
+.mobile-menu__close:focus .mobile-menu__close-img {
   fill: rgb(33, 150, 243);
 }
 
@@ -451,6 +471,14 @@ ul.ol {
 
 .mobile-menu__link:focus {
   color: rgb(33, 150, 243);
+}
+
+.mobile-menu__close-img {
+  fill: #212121;
+}
+
+.mobile-menu__close-img:focus {
+  fill: color rgb(33, 150, 243);
 }
 
 .mobile-menu__item:not(:last-child) {

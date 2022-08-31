@@ -15,11 +15,14 @@
   border: none;
   margin-left: auto;
   display: block;
-  fill: rgba(33, 33, 33, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: #212121;
 }
 
 .mobile-menu__close:focus {
-  fill: rgba(33, 150, 243, 1);
+  .mobile-menu__close-img {
+    fill: rgba(33, 150, 243, 1);
+  }
 }
 
 .mobile-menu__link {
@@ -33,6 +36,13 @@
 
 .mobile-menu__link:focus {
   color: rgba(33, 150, 243, 1);
+}
+.mobile-menu__close-img {
+  fill: #212121;
+}
+
+.mobile-menu__close-img:focus {
+  fill: color rgba(33, 150, 243, 1);
 }
 
 .mobile-menu__item:not(:last-child) {
