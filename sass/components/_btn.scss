@@ -1,27 +1,32 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
-}
+  gap: 8px;
 
-.filter .item:not(:last-child) {
-  margin-right: 8px;
+  @include tablet {
+    justify-content: center;
+  }
 }
 
 .btn {
-  color: var(--title-text-color);
-  background-color: rgb(245, 244, 250);
-  border: none;
+  padding: 6px 22px;
   cursor: pointer;
-  padding: 6px 22px 6px 22px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  text-align: center;
   letter-spacing: 0.03em;
+  border: none;
   border-radius: 4px;
+  color: var(--title-text-color);
+  background-color: rgb(245, 244, 250);
   transition: var(--transition-transform), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn:hover,
 .btn:focus {
   color: var(--primary-bg-color);

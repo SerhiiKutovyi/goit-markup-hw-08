@@ -6,6 +6,10 @@ header {
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   padding: 10px 15px;
+
+  @include tablet {
+    padding: 0 15px;
+  }
 }
 
 .menu-open {
@@ -14,12 +18,25 @@ header {
   background-color: rgba(255, 255, 255, 1);
   fill: rgba(33, 33, 33, 1);
   border: none;
+  background-color: transparent;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-open:focus {
+  fill: rgba(33, 150, 243, 1);
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   display: none;
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .site-nav {
@@ -51,7 +68,7 @@ header {
   transition: var(--transition-transform);
 }
 
-.current {
+.main-nav .current {
   color: var(--accent-color);
 
   display: flex;
@@ -86,6 +103,17 @@ header {
   margin-left: auto;
   gap: 30px;
   display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  @include desktop {
+    flex-direction: unset;
+    gap: 30px;
+  }
 }
 
 .smartphone-item {

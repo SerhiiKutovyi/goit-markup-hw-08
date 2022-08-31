@@ -11,6 +11,15 @@ footer {
 
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include tablet {
+    flex-direction: unset;
+  }
+
+  @include desktop {
+    text-align: unset;
+    align-items: baseline;
+  }
 }
 
 .address-list .item:not(:last-child) {

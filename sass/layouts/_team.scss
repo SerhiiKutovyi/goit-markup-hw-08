@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
   }
+
   &__employe {
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -69,5 +70,8 @@
     .team__soc-link:focus & {
       fill: var(--primary-bg-color);
     }
+  }
+  &-img {
+    display: block;
   }
 }
