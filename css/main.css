@@ -442,6 +442,7 @@ ul.ol {
   top: 0;
   left: 0;
   padding: 10px 15px 48px 40px;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: rgb(255, 255, 255);
@@ -531,6 +532,7 @@ ul.ol {
 
 .mobile-menu__social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -1253,5 +1255,5 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }/*# sourceMappingURL=main.css.map */

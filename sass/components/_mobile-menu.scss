@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   padding: 10px 15px 48px 40px;
+  z-index: 1;
 
   width: 100vw;
   height: 100vh;
@@ -99,5 +100,6 @@
 
 .mobile-menu__social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
